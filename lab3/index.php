@@ -5,8 +5,10 @@
     </head>
     <body>
         <h1>SILVER JACK DBZ STYLE</h1>
-        <p>hello        </p>
-        <p>hello        </p>
-
+        <p>  functions go here</p>
+        <p>  functions go here</p>
+        <p>  functions go here</p>
+        <p>  functions go here </p>
     </body>
+    <h2>WINNER GOES HERE </h2>
 </html>
