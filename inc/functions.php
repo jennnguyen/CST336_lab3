@@ -15,13 +15,10 @@ function randomCardFolder($deck)
         $suite="";
         $card=array_pop($deck);
         $tempNum=(($card%13)+1);
-         //print_r($tempNum);
           //echo 'tempNum: '.$tempNum .'<br/>';
         $suiteValue= (floor($card /13)+1);
-        //print_r($suiteValue);
          //echo 'suiteValue: '.$suiteValue .'<br/>';
         $score = $score +$tempNum;
-        //print_r($score);
          //echo 'score: '.$score .'<br/>';
         switch($suiteValue)
         {
