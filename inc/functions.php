@@ -51,10 +51,14 @@
             echo "<img src='cards/clubs/$player_pics[$i].png' width='70'/>";
             // Scores are stored in score[] array
             $score[$i] = playerturn($deck); 
+            echo "<div id ='names'>";
             echo $player_pics[$i];
             echo ": ";
+            echo "</div>";
+            echo "<div id ='score'>";
             echo 'score '.$score[$i].'<br/>';
             //array_push($score, playerturn($deck));
+            echo "</div>";
         }
             
         
@@ -106,8 +110,9 @@
                 case 3: $winner = $player_pics[3];;
                         break;
             }
+            echo "<div id='Winner'>";
             echo "<h2> $winner wins $totalScore points!!</h2>";
-        
+            echo "</div>";
         }
     }
 
