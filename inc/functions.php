@@ -46,6 +46,7 @@
     
     function play() {
         $player_pics=array("Alex","Jenn","Jose","Mo");
+        shuffle($player_pics);
         for ($i = 0; $i < 4; $i++) {
             echo "<img src='cards/clubs/$player_pics[$i].png' width='70'/>";
             // Scores are stored in score[] array
@@ -96,13 +97,13 @@
         for( $i = 0; $i < count($winners); $i++) {
             switch($winners[$i])
             {
-                case 0: $winner = "Alex";
+                case 0: $winner = $player_pics[0];
                         break;
-                case 1: $winner = "Jenn";
+                case 1: $winner = $player_pics[1];
                         break;
-                case 2: $winner = "Jose";
+                case 2: $winner = $player_pics[2];
                         break;
-                case 3: $winner = "Mo";
+                case 3: $winner = $player_pics[3];;
                         break;
             }
             echo "<h2> $winner wins $totalScore points!!</h2>";
