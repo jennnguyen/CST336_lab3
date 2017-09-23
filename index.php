@@ -10,6 +10,7 @@
     <head>
         <title>Silver Jack </title>
     </head>
+    <h1>DRAGON BALL JACK</h1>
     <body>
         <?php
         
@@ -18,5 +19,8 @@
         
          
         ?>
+        <form>
+           <input type="submit" value="Play" sound="jackpot"/>
+            </form>
     </body>
 </html>

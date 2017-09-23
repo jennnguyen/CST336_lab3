@@ -32,6 +32,7 @@
                         break;
             }
             //Displays the card
+            
             echo "<img src='cards/$suite/$tempNum.png' width='70'/>";
             
         }
@@ -41,10 +42,16 @@
     }
     
     // Player 1-4 are dealt cards and scores are printed
+    
+    
     function play() {
+        $player_pics=array("Alex","Jenn","Jose","Mo");
         for ($i = 0; $i < 4; $i++) {
+            echo "<img src='cards/clubs/$player_pics[$i].png' width='70'/>";
             // Scores are stored in score[] array
             $score[$i] = playerturn($deck); 
+            echo $player_pics[$i];
+            echo ": ";
             echo 'score '.$score[$i].'<br/>';
             //array_push($score, playerturn($deck));
         }
