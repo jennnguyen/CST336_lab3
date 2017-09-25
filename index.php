@@ -68,7 +68,13 @@
 
                 $elapsedSecs = microtime(true) - $start;
                 $_SESSION['total']+=$eslapsedSecs;
+                if($_SESSION['count'] !=0)
+                {
                 $avg_time=$_SESSION['total']/$_SESSION['count'];
+                }
+                else {
+                    $avg_time=$_SESSION['total'];
+                }
                 echo "<div id = 'time'>";
                 
                 echo "Time elapsed: " . $elapsedSecs . " secs";
